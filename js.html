@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+
+<body>
+
+    <button id="btn">Black</button>
+    <button id="btn1">white</button>
+
+    <script>
+        var fname = "Zain";
+        var lname = "Ashiq";
+        var fullname = `My name is ${fname} and ${lname}`;
+        document.write(`I am ${fname} and my father's name is ${lname}`);
+
+        let btn = document.querySelector("#btn");
+
+        btn.addEventListener("click", () => {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white"
+        })
+
+        let btn1 = document.querySelector("#btn1")
+
+        btn1.addEventListener("click", () => {
+            document.body.style.backgroundColor = "white";
+            document.body.style.color = "black"
+        })
+
+        function sum(name, ...args) {
+            let sum = 0;
+            for (let i in args) {
+                sum = sum + arg[i];
+            }
+            document.write("<br>", name, "<br>");
+            document.write("the sum is::", sum);
+        }
+
+        sum("zain", 20, 30, 40);
+
+    </script>
+
+</body>
+
+</html>

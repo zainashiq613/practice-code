@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styl.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Zain Ashiq</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio optio ipsam, amet nulla obcaecati maiores vel
+        expedita voluptatum corporis, exercitationem sed! At earum ullam officia voluptates deleniti dolores obcaecati,
+        soluta adipisci ea ipsa libero laboriosam. Quo, maiores iure velit error perspiciatis facilis reiciendis
+        mollitia sunt delectus sapiente nam? Obcaecati dolor distinctio nisi laboriosam illo! Quisquam repellendus
+        iusto, at expedita, est perferendis incidunt itaque perspiciatis cumque rerum hic pariatur, temporibus odio
+        ipsam a repudiandae quo ullam facere nemo ipsa minus cupiditate ex dicta repellat? Inventore, similique rem. Sit
+        non ducimus, nostrum quaerat praesentium modi quasi optio natus dignissimos aspernatur, adipisci repellat?
+    </p>
+
+    <button id="btn" onclick="changebg()">Dark-Mode</button>
+
+    <Script>
+        function changebg() {
+            if (document.body.style.backgroundColor == "black") {
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+                document.getElementById("btn").innerHTML = "Dark-Mode";
+            }
+            else {
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+                document.getElementById("btn").innerHTML = "Light-Mode";
+            }
+        };
+    </Script>
+
+</body>
+
+</html>

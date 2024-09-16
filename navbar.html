@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Navbar</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        html {
+            overflow-x: hidden;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .header {
+            padding: 0 70px;
+            background: #000;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+            line-height: 70px;
+            position: static;
+        }
+
+        .header h1 {
+            z-index: 999;
+        }
+
+        .header nav ul {
+            display: flex;
+        }
+
+        .header nav ul li {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        .header nav ul li a {
+            color: #000;
+            background: white;
+            padding: 3px 7px;
+            border-radius: 7px;
+        }
+
+        .toggle-btn .fa-solid[name="close"] {
+            display: none;
+        }
+
+        .toggle-btn {
+            display: none;
+            font-size: 24px;
+            z-index: 999;
+        }
+
+        @media (max-width:768px) {
+            .header {
+                padding: 0 49px;
+            }
+
+            .header nav {
+                /* display: none; */
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+                background: red;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: translateX(100%);
+                opacity: 0;
+
+            }
+
+            .header nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header nav ul li {
+                width: 100%;
+                border-bottom: 1px solid #fff;
+            }
+
+            .header nav ul li a {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">Itx <span>Programmer</span></h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars" name="open"></i>
+            <i class="fa-solid fa-xmark" name="close"></i>
+        </div>
+    </header>
+    <script>
+
+    </script>
+</body>
+
+</html>
